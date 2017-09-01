@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Guessing Game</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/guessingGame.js"></script>
+</head>
+
+<body>
+    <div id='app' class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 id='title' class="display-3 center">..::Guessing Game::..</h1>
+            <p id='subtitle' class="lead center">Guess a number from 1 - 100</p>
+        </div>
+    </div>
+    <div id='main' class='container'>
+        <div class="row">
+            <div class="col-md-12">
+                <div id='input-parent'>
+                    <!-- Player's guess input, and submit button -->
+                    <input id ='player-input' class='input-guess' maxlength="3" placeholder="#" autofocus='autofocus'>
+                    <button type="button" class="go-button" id='submit'>Go!</button>
+                </div>
+            </div>
+            <div id='guesses' class="col-md-12">
+                <!-- unordered list of guesses -->
+                <ul class='col-md-12'>
+                    <li class="guess">-</li>
+                    <li class="guess 2">-</li>
+                    <li class="guess 3">-</li>
+                    <li class="guess 4">-</li>
+                    <li class="guess 5">-</li>
+                </ul>
+            </div>
+            <div id="menu-btns" class="col-md-12 center">
+                <!-- reset and hint buttons -->
+                <button id ='reset' type="button" class="btn btn-danger">Reset</button>
+                <button id='hint' type="button" class="btn btn-inf">Hint</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class='center'>
+            <img src="fa-logo@2x.png" class="rounded float-left footer-img"></img>
+            <img src="grace_hopper_academy.png" class="rounded float-right footer-img gh-fix"></img>
+            <div class="footer-sign">
+                <p class="lead"> by Lukasz Kapica
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
